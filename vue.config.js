@@ -13,10 +13,11 @@ module.exports = defineConfig({
     },
     plugins: [
       new ModuleFederationPlugin({
-        name: 'AAA',
+        name: 'App',
         filename: `remoteEntry.js`,
         exposes: {
-          './AAA': './src/App.vue'
+          './AButton': './src/App.vue',
+          './AInput': './src/AInput.vue'
         },
         // shared: require("./package.json").dependencies
       })

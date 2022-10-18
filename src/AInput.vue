@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-    <button>这是『a』模块的一个按钮哦！</button>
+    <input type="text" placeholder="这是a模块的输入框哟！" />
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'AButton',
+  name: 'AInput',
   components: {
+  },
+  created() {
+    console.log(2323);
   }
 }
 </script>
